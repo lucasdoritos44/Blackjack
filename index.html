@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section><h2>1st Player Score:</h2><h2 id="1st__player-score">0</h2></section>
+        <section><h2>2nd Player Score:</h2><h2 id="2nd__player-score">0</h2></section>
+    </header>
+    <main>
+        <div class="winner">
+            <p class="winner__p">Player 1 Won</p>
+            
+<button class="btn__play-again" onclick="playAgain()">Play Again?</button>
+
+        </div>
+        <section class="current__score">
+            <h1>Current Score: &nbsp;</h1><h1 id="current__score">0</h1>
+        </section>
+            <div class="player__1 active">
+            </div>
+            <div class="player__2">
+            </div>
+            <div class="cards__on-table">
+                <img src="" class="card__on-table" id="cards__on-table"/>
+            </div>
+        <button class="btn__add" onclick="addCard()">ADD</button>
+        <button class="btn__hold" onclick="holdCard()">HOLD</button>
+    </main>
+</body>
+</html>

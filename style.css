@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    color:#FFFCF2;
+}
+
+header{
+    width:100vw;
+    height:10vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:1rem;
+    background: #252422;
+}
+
+main{
+    background-color: #403D39;
+    height:90vh;
+    width:100vw;
+    position: relative;
+    display:flex;
+}
+
+section{
+    display:flex;
+}
+
+.player__1{
+    width:50vw;
+    height:90vh;
+    background-color: #FFFCF2;
+}
+
+.player__2{
+    width:50vw;
+    height:90vh;
+    background-color: #FFFCF2;
+}
+
+.current__score{
+    position:absolute;
+    top:10%;
+    left:50%;
+   display:flex;
+   transform: translate(-50%,-50%);
+}
+
+.current__score h1{
+    color: #000;
+}
+
+.btn__add, .btn__hold, .btn__play-again{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width:8rem;
+    height:4rem;
+    border:none;
+    border-radius:12px;
+    background-color: #EB5E28;
+    color:#fff;
+    font-size:16px;
+    transition: all 0.1s ease-in;
+
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(99, 52, 4, 1);
+-moz-box-shadow: 8px 8px 24px 0px rgba(99, 52, 4, 1);
+box-shadow: 8px 8px 24px 0px rgba(99, 52, 4, 1);
+}
+
+.btn__add{
+    top:75%;
+    left:50%;
+}
+
+.btn__hold{
+    top:85%;
+    left:50%;
+}
+
+.btn__play-again{
+    top:80%;
+    left:50%;
+}
+
+.btn__add:hover, .btn__hold:hover, .btn__play-again:hover{
+    cursor: pointer;
+}
+
+.btn__add:active, .btn__hold:active, .btn__play-again:active{
+    transform: translate(-55px, -25px);
+    box-shadow: none;
+}
+
+.card__on-table{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height:200px;
+
+}
+
+.active{
+    background-color: #CCC5B9;
+}
+
+.winner{
+    background-color: #403D39;
+    color:white;
+    position: absolute;
+    width:100vw;
+    height:90vh;
+    z-index:10;
+
+    font-size:4rem;
+    text-align: center;
+    padding:5rem;
+}
